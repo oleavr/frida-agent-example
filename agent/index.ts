@@ -1,7 +1,7 @@
 import { log } from "./logger";
 
 rpc.exports = {
-    async init(stage: string, parameters: any) {
+    async init(stage: string, parameters: any): Promise<void> {
         try {
             log("[init]");
 
@@ -18,7 +18,7 @@ rpc.exports = {
             log("Oops: " + e.stack);
         }
     },
-    dispose() {
+    dispose(): void {
         console.log("[dispose]");
     }
 };
