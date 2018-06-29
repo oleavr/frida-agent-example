@@ -7,7 +7,7 @@ rpc.exports = {
 
             log("Let's see");
             const socket = await Socket.connect({
-                family: "ipv4",
+                family: AddressFamily.IPv4,
                 host: "127.0.0.1",
                 port: 1337
             });

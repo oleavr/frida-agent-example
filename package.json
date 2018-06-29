@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "frida-compile": "^5.3.7",
-    "frida-gum-types": "^1.2.1"
+    "frida-gum-types": "^1.2.2"
   }
 }
