@@ -1,0 +1,35 @@
+{
+  "name": "frida-agent-example",
+  "version": "1.0.0",
+  "description": "StealthSpy powered by Frida",
+  "private": true,
+  "main": "agent/index.ts",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            [
+              "es2015",
+              {
+                "loose": true
+              }
+            ]
+          ],
+          "plugins": [
+            "transform-runtime"
+          ]
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "frida-compile agent/index.ts -o _agent.js",
+    "watch": "frida-compile agent/index.ts -o _agent.js -w"
+  },
+  "devDependencies": {
+    "frida-compile": "^5.3.7",
+    "frida-gum-types": "^1.2.1"
+  }
+}
