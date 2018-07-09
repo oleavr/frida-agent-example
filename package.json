@@ -25,6 +25,7 @@
     ]
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "frida-compile agent/index.ts -o _agent.js",
     "watch": "frida-compile agent/index.ts -o _agent.js -w"
   },
