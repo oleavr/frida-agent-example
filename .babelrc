@@ -5,8 +5,7 @@
       {
         "loose": true
       }
-    ],
-    "@babel/preset-typescript"
+    ]
   ],
   "plugins": [
     [

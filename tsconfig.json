@@ -5,7 +5,6 @@
     "allowJs": true,
     "noEmit": true,
     "strict": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
     "typeRoots": [
       "node_modules/@types",
