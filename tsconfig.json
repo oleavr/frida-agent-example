@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["ESNext"],
+    "target": "esnext",
+    "lib": ["esnext"],
     "allowJs": true,
     "noEmit": true,
     "strict": true,
