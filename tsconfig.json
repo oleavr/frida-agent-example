@@ -1,6 +1,19 @@
 {
-    "compilerOptions": {
-        "lib": ["es5", "es2015.promise"],
-        "typeRoots": ["node_modules/frida-gum-types"]
-    }
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/frida-gum-types"
+    ],
+    "types": [
+      "node",
+      "frida-gum"
+    ]
+  }
 }
