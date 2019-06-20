@@ -5,14 +5,6 @@
     "allowJs": true,
     "noEmit": true,
     "strict": true,
-    "esModuleInterop": true,
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules/frida-gum-types"
-    ],
-    "types": [
-      "node",
-      "frida-gum"
-    ]
+    "esModuleInterop": true
   }
 }
