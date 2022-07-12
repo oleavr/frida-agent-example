@@ -1,4 +1,4 @@
-import { log } from "./logger";
+import { log } from "./logger.js";
 
 const header = Memory.alloc(16);
 header
