@@ -10,8 +10,8 @@
     "watch": "frida-compile agent/index.ts -o _agent.js -w"
   },
   "devDependencies": {
-    "@types/frida-gum": "^18.1.0",
-    "@types/node": "^18.0.6",
-    "frida-compile": "^15.0.8"
+    "@types/frida-gum": "^18.5.1",
+    "@types/node": "^18.19.3",
+    "frida-compile": "^16.4.1"
   }
 }
