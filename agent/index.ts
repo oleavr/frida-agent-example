@@ -1,3 +1,4 @@
+import Java from "frida-java-bridge";
 import { log } from "./logger.js";
 
 const header = Memory.alloc(16);
@@ -14,9 +15,20 @@ Process.getModuleByName("libSystem.B.dylib")
         log(`export ${index}: ${exp.name}`);
     });
 
-Interceptor.attach(Module.getExportByName(null, "open"), {
+Interceptor.attach(Module.getGlobalExportByName("open"), {
     onEnter(args) {
         const path = args[0].readUtf8String();
         log(`open() path="${path}"`);
     }
 });
+
+if (Java.available) {
+    Java.perform(() => {
+        send({
+            type: "status",
+            message: "Application class-loader now available"
+        });
+    });
+} else {
+    console.log("No Java VM in this process");
+}
